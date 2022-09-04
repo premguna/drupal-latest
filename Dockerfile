@@ -14,7 +14,8 @@ RUN mkdir code && cd code && \
     mkdir -p ~/.ssh && \
     ssh -T git@github.com
    # chmod 700 ~/.ssh/id_rsa  && \
-    ssh-keyscan github.com >> ~/.ssh/known_hosts && \
+   # ssh-keyscan github.com >> ~/.ssh/known_hosts && \
+    echo "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config && \
  #   chmod 700 /root/.ssh/*  && \
     
  #   echo "$PRIVATE_KEY" > ~/.ssh/private_key  && \
