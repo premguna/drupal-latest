@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
-RUN mkdir code && cd code && \
+RUN apt-get install git && \
+    mkdir code && cd code && \
     git pull origin main 
     
