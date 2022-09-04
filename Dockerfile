@@ -6,6 +6,6 @@ RUN mkdir code && cd code && \
     git remote add origin git@github.com:premguna/drupal-latest.git && \
     git config --global init.defaultBranch main && \ 
     git remote -v
-  #  git remote add origin git@github.com:premguna/drupal-latest.git && \
-  #  git pull origin main 
+    git pull origin main
+    ls -lrt  
     
