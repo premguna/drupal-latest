@@ -9,5 +9,5 @@ RUN command -v ssh-agent >/dev/null && \
     echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config && \
     chmod 700 ~/.ssh/private_key  && \
     ls -lrt  && \
-    git pull origin main && \
+    git pull origin main 
     
