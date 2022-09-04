@@ -2,7 +2,7 @@ FROM ubuntu:latest
 RUN apt-get -y update && \
     apt-get -y  install git 
 RUN mkdir code && cd code && \
-    git init && \
+    git config --global init.defaultBranch main && \
     git remote add origin ssh://git@github.com:premguna/drupal-latest.git && \
-    git pull myOrigin main 
+    git pull origin main 
     
