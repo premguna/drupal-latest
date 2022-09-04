@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 RUN command -v ssh-agent >/dev/null
-    sudo apt-get install openssh-client -y  
+    apt-get install openssh-client -y  
     eval $(ssh-agent -s)
     echo "$PRIVATE_KEY" | tr -d '\r' | ssh-add -
     mkdir -p ~/.ssh
