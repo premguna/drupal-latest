@@ -1,4 +1,5 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
+RUN apt-get -y update 
 RUN apt-get -y  install git 
    # mkdir code && cd code && \
    # git pull origin main 
