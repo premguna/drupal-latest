@@ -15,11 +15,11 @@ RUN mkdir code && cd code && \
     ssh -T git@github.com
    # chmod 700 ~/.ssh/id_rsa  && \
    # ssh-keyscan github.com >> ~/.ssh/known_hosts && \
-    echo "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config && \
+  #  echo "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config && \
  #   chmod 700 /root/.ssh/*  && \
     
  #   echo "$PRIVATE_KEY" > ~/.ssh/private_key  && \
-  #  echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config && \
+    echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config && \
   #  chmod 700 ~/.ssh/private_key  && \
     git pull origin main && \
     ls -lrt  
