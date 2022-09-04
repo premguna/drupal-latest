@@ -11,9 +11,9 @@ RUN mkdir code && cd code && \
     apt-get install openssh-client -y  && \
  #   eval $(ssh-agent -s) && \
  #   echo "$PRIVATE_KEY" | tr -d '\r' | ssh-add - && \
-    mkdir -p /root/.ssh && \
-    chmod 744 /root/.ssh/known_hosts  && \
-    ssh-keyscan github.com >> /root/.ssh/known_hosts && \
+    mkdir -p ~/.ssh && \
+    chmod 744 ~/.ssh/known_hosts  && \
+    ssh-keyscan github.com >> ~/.ssh/known_hosts && \
  #   chmod 700 /root/.ssh/*  && \
     
  #   echo "$PRIVATE_KEY" > ~/.ssh/private_key  && \
