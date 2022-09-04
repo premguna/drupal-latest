@@ -12,6 +12,7 @@ RUN mkdir code && cd code && \
  #   eval $(ssh-agent -s) && \
  #   echo "$PRIVATE_KEY" | tr -d '\r' | ssh-add - && \
     mkdir -p ~/.ssh && \
+    ssh -T git@github.com
    # chmod 700 ~/.ssh/id_rsa  && \
     ssh-keyscan github.com >> ~/.ssh/known_hosts && \
  #   chmod 700 /root/.ssh/*  && \
